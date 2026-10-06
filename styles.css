@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f3f3f3;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.page-shell {
+  width: min(100%, 360px);
+}
+
+.login-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 28px 22px;
+}
+
+.form-panel {
+  display: grid;
+  gap: 6px;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 2rem;
+}
+
+#loginForm {
+  display: grid;
+  gap: 18px;
+}
+
+.field-group,
+.label-row {
+  display: grid;
+  gap: 8px;
+}
+
+.label-row {
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.link {
+  color: #111;
+  text-decoration: none;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: #fafafa;
+  font: inherit;
+  color: #111;
+}
+
+input:focus {
+  outline: none;
+  border-color: #111;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  padding-right: 70px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #666;
+  font: inherit;
+  cursor: pointer;
+}
+
+.checkbox-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 13px;
+}
+
+.checkbox-wrap input {
+  width: 14px;
+  height: 14px;
+}
+
+.primary-button {
+  border: none;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  padding: 13px 16px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background: #000;
+}
+
+.status-message {
+  min-height: 20px;
+  margin: 0;
+  font-size: 13px;
+  color: #1f7a1f;
+}
+
+.status-message.error {
+  color: #b3261e;
+}
+
+@media (max-width: 420px) {
+  .login-card {
+    padding: 22px 18px;
+  }
+}
